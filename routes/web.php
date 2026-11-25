@@ -7,7 +7,7 @@ use App\Http\Controllers\CountryController;
 use App\Http\Controllers\ColorController;
 use App\Http\Controllers\TransmissionController;
 use App\Http\Controllers\CarModelController;
-
+//aaaaa
 Route::get('/', function () { return redirect('/cars'); });
 
 Route::get('/cars', [CarController::class, 'index']);     
