@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
     <h1>Список автомобилей</h1>
-    
+    //a
     <div class="row">
        @foreach($cars as $car)
             <div class="col-md-4 mb-3">

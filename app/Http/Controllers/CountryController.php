@@ -12,7 +12,7 @@ class CountryController extends Controller
         $countries = Country::all();
         return view('countries.index', compact('countries'));
     }
-
+//a
     public function show($id)
     {
         $country = Country::with('brands')->findOrFail($id);

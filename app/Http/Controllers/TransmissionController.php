@@ -12,7 +12,7 @@ class TransmissionController extends Controller
         $transmissions = Transmission::all();
         return view('transmissions.index', compact('transmissions'));
     }
-
+//a
     public function show($id)
     {
         $transmission = Transmission::with('cars.model')->findOrFail($id);

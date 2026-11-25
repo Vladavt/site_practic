@@ -23,7 +23,7 @@
     <main class="container mt-4 flex-grow-1">
         @yield('content') 
     </main>
-
+//a
     <footer class="bg-dark text-white text-center py-3 mt-auto">
         <p class="mb-0">© 2026 Проект "База данных Автосалона"</p>
     </footer>

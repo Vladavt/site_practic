@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+//a
     <h1>Бренды автомобилей</h1>
     <div class="row">
         @foreach($brands as $brand)
