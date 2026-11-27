@@ -29,3 +29,40 @@ Route::get('/transmissions/{id}', [TransmissionController::class, 'show']);
 
 Route::get('/models', [CarModelController::class, 'index']);
 Route::get('/models/{id}', [CarModelController::class, 'show']);
+
+Route::get('/colors/create', [ColorController::class, 'create']); 
+Route::post('/colors', [ColorController::class, 'store']);        
+
+Route::get('/colors/{id}/edit', [ColorController::class, 'edit']); 
+Route::put('/colors/{id}', [ColorController::class, 'update']);    
+
+Route::delete('/colors/{id}', [ColorController::class, 'destroy']); 
+Route::get('/brands/create', [BrandController::class, 'create']);
+Route::post('/brands', [BrandController::class, 'store']);
+Route::get('/brands/{id}/edit', [BrandController::class, 'edit']);
+Route::put('/brands/{id}', [BrandController::class, 'update']);
+Route::delete('/brands/{id}', [BrandController::class, 'destroy']);
+
+Route::get('/countries/create', [CountryController::class, 'create']);
+Route::post('/countries', [CountryController::class, 'store']);
+Route::get('/countries/{id}/edit', [CountryController::class, 'edit']);
+Route::put('/countries/{id}', [CountryController::class, 'update']);
+Route::delete('/countries/{id}', [CountryController::class, 'destroy']);
+
+Route::get('/cars/create', [CarController::class, 'create']);
+Route::post('/cars', [CarController::class, 'store']);
+Route::get('/cars/{id}/edit', [CarController::class, 'edit']);
+Route::put('/cars/{id}', [CarController::class, 'update']);
+Route::delete('/cars/{id}', [CarController::class, 'destroy']);
+
+Route::get('/models/create', [CarModelController::class, 'create']);
+Route::post('/models', [CarModelController::class, 'store']);
+Route::get('/models/{id}/edit', [CarModelController::class, 'edit']);
+Route::put('/models/{id}', [CarModelController::class, 'update']);
+Route::delete('/models/{id}', [CarModelController::class, 'destroy']);
+
+Route::get('/transmissions/create', [TransmissionController::class, 'create']);
+Route::post('/transmissions', [TransmissionController::class, 'store']);
+Route::get('/transmissions/{id}/edit', [TransmissionController::class, 'edit']);
+Route::put('/transmissions/{id}', [TransmissionController::class, 'update']);
+Route::delete('/transmissions/{id}', [TransmissionController::class, 'destroy']);
